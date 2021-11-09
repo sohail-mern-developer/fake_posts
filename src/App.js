@@ -1,11 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+// Components
+import Posts from './components/Posts';
+
+// States
+import GlobalState from './context/global/GlobalState';
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <GlobalState>
+    <>
+      <h1>Context API with axios</h1>
+      <Posts />
+    </>
+    </GlobalState>
+    
   );
 }
 
